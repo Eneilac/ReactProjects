@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { getRandomFacts } from './services/facts'
 
 
 //Enunciado ejercicio:
@@ -11,20 +12,9 @@ function App() {
   const [fact, setFact] = useState()
   const [image, setImage] = useState()
 
-
-  const URL_RANDOM_FACT = "https://catfact.ninja/fact";
-
-  //efects
-
-  //Hace la peticion para recuperar el fact
   useEffect(() => {
-    fetch(URL_RANDOM_FACT)
-      .then(res => res.json())
-      .then(data => {
-        setFact(data.fact)
-      })
+    getRandomFacts().then(newFact => setFact(newFact))
   }, [])
-
 
   useEffect(() => {
     //en el caso de que fact venga vacio cortamos flujo
@@ -52,9 +42,16 @@ function App() {
 
 
 
+  const handleClick = async () => {
+    const newFact = await getRandomFacts()
+    setFact(newFact)
+  }
+
+
   return (
     <main>
       <h1>Peticiones Fetch</h1>
+      <button onClick={handleClick}>Obtener otro fact y otra imagen</button>
       <p><strong>Fact aleatorio:</strong> {fact && fact}</p>
       {image && <img src={image} alt='imagen de un gatito obtenida con la primera palabra de la primera api' />}
     </main>
