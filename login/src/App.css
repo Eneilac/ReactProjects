@@ -1,0 +1,27 @@
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+.panel {
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: rgba(255, 255, 255, 0.795);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel img {
+  /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: 60%;
+}
