@@ -1,3 +1,4 @@
+import './form.css'
 import React, { useState } from "react";
 
 function Form({ onSubmit }) {

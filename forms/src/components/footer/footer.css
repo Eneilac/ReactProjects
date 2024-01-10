@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    background-color: rgba(61, 53, 53, 0.555);
+}
+
+footer .logo img {
+    height: 40px;
+}

@@ -1,0 +1,36 @@
+.error {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.error>h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.error>p {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 0;
+}
+
+.error>a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.error>a:hover {
+    text-decoration: underline;
+}

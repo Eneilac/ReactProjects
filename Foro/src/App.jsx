@@ -25,7 +25,6 @@ function App() {
         console.error(error);
       })
     }
-
   }, [profiles])
 
 
@@ -33,7 +32,6 @@ function App() {
 
   return (
     <div className="container">
-
       {profiles&&profiles.map((profile,index) => (
         <div key={index}>
           <Card
@@ -44,7 +42,7 @@ function App() {
             avatar={profile.picture.thumbnail}
           />
         </div>
-      ))}
+      ))}   
     </div>
   )
 }
