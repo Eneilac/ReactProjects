@@ -1,9 +1,9 @@
-.card{
+.card {
   max-width: 500px;
   margin: auto;
 }
 
-.card button{
+.card button {
   cursor: pointer;
   margin: auto;
   border: none;
@@ -11,9 +11,9 @@
   color: white;
   padding: 5px;
   font-size: 20px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
 
@@ -53,7 +53,11 @@ article img {
   border-radius: 100%;
 }
 
-article aside{
+article aside {
   display: flex;
   gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
 }
